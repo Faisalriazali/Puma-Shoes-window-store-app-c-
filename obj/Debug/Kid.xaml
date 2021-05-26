@@ -1,0 +1,695 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="PumaShoes.Kid"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PumaShoes"
+    xmlns:common="using:PumaShoes.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">Kids Shoes</x:String>
+    </Page.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="Gray" Width="{Binding ActualWidth, ElementName=pageRoot, Mode=OneWay}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="backButton" Content="&#xE112;" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Background="Red" BorderBrush="Black" Foreground="Black" RequestedTheme="Dark" FontFamily="Segoe UI Symbol" Padding="0" BorderThickness="2" Style="{StaticResource NavBtn}" UseLayoutRounding="True" Height="45" Width="45" FontSize="20" FontWeight="Normal" ToolTipService.ToolTip="Back"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"/>
+            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" Margin="10,0,0,0" Foreground="Blue" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="50"/>
+        </Grid>
+        <ScrollViewer Grid.Row="1">
+            <Grid x:Name="Main">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <!---->
+                <Grid x:Name="soccer_main" VerticalAlignment="Top" Grid.Row="0">
+                    <Grid Margin="0" VerticalAlignment="Top" Background="Red">
+                        <TextBlock x:ConnectionId='0' x:Name="kid_Soccer_Toggle" VerticalAlignment="Top" Text="&#xE010; Boys &#xE010;" FontSize="25"  FontFamily="Segoe UI Symbol" Padding="25,0,0,0" Foreground="Black" TextAlignment="Center"                                                                                                                             />
+                    </Grid>
+                    <Grid x:Name="kids_data" Margin="0,40,0,0" Visibility="Collapsed">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="300"/>
+                            <RowDefinition Height="300"/>
+                            <!--<RowDefinition Height="300"/>-->
+                </Grid.RowDefinitions>
+                <Grid Margin="25,0" Height="300" Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row1_Box_1_img" Source="Assets/image1/image/puma kids/astral aura-astral aura-bleached denim/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=Row1_Box1_Name}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                    Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_1_color1" Source="Assets/image1/image/puma kids/astral aura-astral aura-bleached denim/358854_02_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                      />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_1_color2" Source="Assets/image1/image/puma kids/black-limestone gray/359043_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                      />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_1_color3" Source="Assets/image1/image/puma kids/black-sulphur spring-white/187525_06_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="0,0,10,0"                                        HorizontalAlignment="Right" Width="53"                               />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="Row1_Box1_Name" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="CARSON RUNNER CAMO KIDS RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=Row1_Box1_Name}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row1_Box_2_img" Source="Assets/image1/image/puma kids/black-limestone gray/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_2_color1" Source="Assets/image1/image/puma kids/astral aura-astral aura-bleached denim/358854_02_SWT_PNA.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                   VerticalAlignment="Top" Height="18"                               />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_2_color2" Source="Assets/image1/image/puma kids/black-limestone gray/359043_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_2_color3" Source="Assets/image1/image/puma kids/black-sulphur spring-white/187525_06_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="CARSON RUNNER CAMO KIDS RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row1_Box_3_img" Source="Assets/image1/image/puma kids/black-sulphur spring-white/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock1}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White" Height="30" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_3_color1" Source="Assets/image1/image/puma kids/astral aura-astral aura-bleached denim/358854_02_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_3_color2" Source="Assets/image1/image/puma kids/black-limestone gray/359043_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_3_color3" Source="Assets/image1/image/puma kids/black-sulphur spring-white/187525_06_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock1" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="CARSON RUNNER KIDS RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock1}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row1_Box_4_img" Source="Assets/image1/image/puma kids/black-white/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock2}"/>
+                    <Grid Grid.Row="1" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_4_color1" Source="Assets/image1/image/puma kids/black-white/357640_07_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                               />
+
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock2" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="CARSON RUNNER KIDS RUNNING SHOES"  TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock2}" />
+
+                </Grid>
+
+
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row2_Box_1_img" Source="Assets/image1/image/puma kids/cloisonne-surf the web-carmine rose/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock3}" />
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_1_color1" Source="Assets/image1/image/puma kids/cloisonne-surf the web-carmine rose/Green_Silver.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                   VerticalAlignment="Top" Height="18"                               />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_1_color2" Source="Assets/image1/image/puma kids/high risk red-black-sulphur spring/357640_07_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_1_color3" Source="Assets/image1/image/puma kids/limestone gray-steel gray-high risk red/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_1_color4" Source="Assets/image1/image/puma kids/peacoat-princess blue/360036_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock3" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="CARSON RUNNER KIDS RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                 ToolTipService.ToolTip="{Binding Text, ElementName=textBlock3}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row2_Box_2_img" Source="Assets/image1/image/puma kids/high risk red-black-sulphur spring/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock4}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_2_color1" Source="Assets/image1/image/puma kids/cloisonne-surf the web-carmine rose/Green_Silver.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                   VerticalAlignment="Top" Height="18"                                />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_2_color2" Source="Assets/image1/image/puma kids/high risk red-black-sulphur spring/357640_07_SWT_PNA.jpg" Stretch="Fill" Grid.Column="1" Margin="10,0,10,5"                                                   VerticalAlignment="Top" Height="18"                               />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_2_color3" Source="Assets/image1/image/puma kids/limestone gray-steel gray-high risk red/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_2_color4" Source="Assets/image1/image/puma kids/peacoat-princess blue/360036_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock4" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="CARSON RUNNER KIDS RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock3}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row2_Box_3_img" Source="Assets/image1/image/puma kids/limestone gray-steel gray-high risk red/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock5}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_3_color1" Source="Assets/image1/image/puma kids/cloisonne-surf the web-carmine rose/Green_Silver.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,12"                                                                                  />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_3_color2" Source="Assets/image1/image/puma kids/high risk red-black-sulphur spring/357640_07_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_3_color3" Source="Assets/image1/image/puma kids/limestone gray-steel gray-high risk red/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_3_color4" Source="Assets/image1/image/puma kids/peacoat-princess blue/360036_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock5" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="CARSON RUNNER SUPERMAN™ KIDS RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock3}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row2_Box_4_img" Source="Assets/image1/image/puma kids/peacoat-princess blue/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock6}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="3" />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_4_color1" Source="Assets/image1/image/puma kids/cloisonne-surf the web-carmine rose/Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_4_color2" Source="Assets/image1/image/puma kids/high risk red-black-sulphur spring/357640_07_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_4_color3" Source="Assets/image1/image/puma kids/limestone gray-steel gray-high risk red/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_4_color4" Source="Assets/image1/image/puma kids/peacoat-princess blue/360036_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock6" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="CARSON RUNNER SUPERMAN™ KIDS RUNNING SHOES"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock3}"/>
+
+                </Grid>
+
+
+
+
+
+            </Grid>
+    </Grid>
+
+
+    <Grid x:Name="two_soccer_main" VerticalAlignment="Top" Grid.Row="1">
+        <Grid Margin="0" VerticalAlignment="Top" Background="Green">
+            <TextBlock x:ConnectionId='0' x:Name="Gril_Running_Toggle" VerticalAlignment="Top" Text="&#xE011; Girls &#xE011;" FontSize="25"  FontFamily="Segoe UI Symbol" Padding="25,0,0,0" Foreground="Black" TextAlignment="Center"                                                                                                                                   Grid.ColumnSpan="2" />
+        </Grid>
+        <Grid x:Name="two_soccer_data" Margin="0,40,0,0" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="300"/>
+
+            </Grid.RowDefinitions>
+            <Grid Margin="25,0" Height="300" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row1_Box_1_img" Source="Assets/image1/image/puma kids/kid gril/black-black-metallic gold/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock7}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                        Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_1_color1" Source= "Assets/image1/image/puma kids/kid gril/black-black-metallic gold/354259_12_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                              />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_1_color2" Source="Assets/image1/image/puma kids/kid gril/black-puma silver/354259_12_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                              />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_1_color3" Source="Assets/image1/image/puma kids/kid gril/black-vermillion orange/359043_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                              />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock7" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="SUEDE JR SNEAKERS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock7}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row1_Box_2_img" Source="Assets/image1/image/puma kids/kid gril/black-puma silver/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock8}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_2_color1" Source="Assets/image1/image/puma kids/kid gril/black-black-metallic gold/354259_12_SWT_PNA.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                       VerticalAlignment="Top" Height="18"                                   />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_2_color2" Source="Assets/image1/image/puma kids/kid gril/black-puma silver/354259_12_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_2_color3" Source="Assets/image1/image/puma kids/kid gril/black-vermillion orange/359043_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+                    
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock8" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="SUEDE JR SNEAKERS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                     ToolTipService.ToolTip="{Binding Text, ElementName=textBlock8}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row1_Box_3_img" Source="Assets/image1/image/puma kids/kid gril/black-vermillion orange/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock9}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White" Height="30" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_3_color1" Source="Assets/image1/image/puma kids/kid gril/black-black-metallic gold/354259_12_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_3_color2" Source="Assets/image1/image/puma kids/kid gril/black-puma silver/354259_12_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_3_color3" Source="Assets/image1/image/puma kids/kid gril/black-vermillion orange/359043_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock9" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="SUEDE JR SNEAKERS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                     ToolTipService.ToolTip="{Binding Text, ElementName=textBlock9}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row1_Box_4_img" Source="Assets/image1/image/puma kids/kid gril/black-white/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock10}"/>
+                <Grid Grid.Row="1" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_4_color1" Source="Assets/image1/image/puma kids/kid gril/black-white/359043_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                    />
+
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock10" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="SUEDE JR SNEAKERS"                                     ToolTipService.ToolTip="{Binding Text, ElementName=textBlock10}"/>
+
+
+
+
+            </Grid>
+
+
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_img" Source="Assets/image1/image/puma kids/kid gril/black-white1/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock11}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_color1" Source="Assets/image1/image/puma kids/kid gril/black-white1/Silver_Black_Yellow.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                       VerticalAlignment="Top" Height="18"                                   />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_color2" Source="Assets/image1/image/puma kids/kid gril/carmine rose-italian plum/354259_22_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_color3" Source="Assets/image1/image/puma kids/kid gril/drizzle-high risk red/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_color4" Source="Assets/image1/image/puma kids/kid gril/glacier gray-white/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                         />
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock11" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="SUEDE JR SNEAKERS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock11}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_img" Source="Assets/image1/image/puma kids/kid gril/carmine rose-italian plum/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock12}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_color1" Source="Assets/image1/image/puma kids/kid gril/black-white1/Silver_Black_Yellow.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                       VerticalAlignment="Top" Height="18"                                   />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_color2" Source="Assets/image1/image/puma kids/kid gril/carmine rose-italian plum/354259_22_SWT_PNA.jpg" Stretch="Fill" Grid.Column="1" Margin="10,0,10,5"                                                       VerticalAlignment="Top" Height="18"                                   />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_color3" Source="Assets/image1/image/puma kids/kid gril/drizzle-high risk red/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_color4" Source="Assets/image1/image/puma kids/kid gril/glacier gray-white/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                         />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock12" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="SUEDE JR SNEAKERS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock12}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_img" Source="Assets/image1/image/puma kids/kid gril/drizzle-high risk red/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock13}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_color1" Source="Assets/image1/image/puma kids/kid gril/black-white1/Silver_Black_Yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_color2" Source="Assets/image1/image/puma kids/kid gril/carmine rose-italian plum/354259_22_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_color3" Source="Assets/image1/image/puma kids/kid gril/drizzle-high risk red/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_color4" Source="Assets/image1/image/puma kids/kid gril/glacier gray-white/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                         />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock13" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="SUEDE JR SNEAKERS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock13}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_img" Source="Assets/image1/image/puma kids/kid gril/glacier gray-white/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock14}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="3" />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_color1" Source="Assets/image1/image/puma kids/kid gril/black-white1/Silver_Black_Yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_color2" Source="Assets/image1/image/puma kids/kid gril/carmine rose-italian plum/354259_22_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_color3" Source="Assets/image1/image/puma kids/kid gril/drizzle-high risk red/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_color4" Source="Assets/image1/image/puma kids/kid gril/glacier gray-white/Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                         />
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock14" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="SUEDE JR SNEAKERS"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock14}"/>
+            </Grid>
+
+
+
+
+        </Grid>
+    </Grid>
+
+
+
+    <!--<Grid x:Name="three_soccer_main" VerticalAlignment="Top" Grid.Row="2">
+        <Grid Margin="0" VerticalAlignment="Top" Background="#FFFB0707">
+            <TextBlock x:Name="Men_Sneaker_Toggle" VerticalAlignment="Top" Text="&#xE011; Men Sneakers &#xE011;" FontSize="25"  FontFamily="Segoe UI Symbol" Padding="25,0,0,0" Foreground="White" TextAlignment="Center" Tapped="three_TextBlock_Tapped" PointerEntered="Men_Soccer_Toggle_PointerEntered" PointerExited="Men_Soccer_Toggle_PointerExited" Grid.ColumnSpan="2" Height="33" />
+        </Grid>
+        <Grid x:Name="three_soccer_data" Margin="0,40,0,0" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="300"/>
+
+            </Grid.RowDefinitions>
+            <Grid Margin="25,0" Height="300" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row1_Box_1_img" Source="Images/album6/Red/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row1_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock15}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:Name="three_Row1_Box_1_color1" Source="Images/colorPicker/Red.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_color1_PointerEntered" Tapped="three_Row1_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_1_color2" Source="Images/colorPicker/Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_color2_PointerEntered" Tapped="three_Row1_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_1_color3" Source="Images/colorPicker/Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_color3_PointerEntered" Tapped="three_Row1_Box_3_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock15"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Suede Embossed Iced Men's Sneakers" TextAlignment="Center" Foreground="Black" FontSize="20" Padding="0,10,0,0" Tapped="three_Row1_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock15}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row1_Box_2_img" Source="Images/album6/Black/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row1_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock16}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid2_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:Name="three_Row1_Box_2_color1" Source="Images/colorPicker/Red.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row1_Box_2_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="three_Row1_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_2_color2" Source="Images/colorPicker/Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row1_Box_2_color2_PointerEntered" Tapped="three_Row1_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_2_color3" Source="Images/colorPicker/Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row1_Box_2_color3_PointerEntered" Tapped="three_Row1_Box_3_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock16" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Suede Embossed Iced Men's Sneakers" TextAlignment="Center" Foreground="Black" FontSize="20" Padding="0,10,0,0"  Tapped="three_Row1_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock16}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row1_Box_3_img" Source="Images/album6/Brown/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row1_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock17}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid3_PointerExited" Background="White" Height="30" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:Name="three_Row1_Box_3_color1" Source="Images/colorPicker/Red.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row1_Box_3_color1_PointerEntered" Tapped="three_Row1_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_3_color2" Source="Images/colorPicker/Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row1_Box_3_color2_PointerEntered" Tapped="three_Row1_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_3_color3" Source="Images/colorPicker/Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row1_Box_3_color3_PointerEntered" Tapped="three_Row1_Box_3_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock17"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Suede Embossed Iced Men's Sneakers" TextAlignment="Center" Foreground="Black" FontSize="20" Padding="0,10,0,0"  Tapped="three_Row1_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock17}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row1_Box_4_img" Source="Images/album6/MultiColor/1.jpg" Stretch="Fill" Tapped="three_Row1_Box_4_img_Tapped" Height="200" VerticalAlignment="Top" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock18}"/>
+                <Grid Grid.Row="1" Background="White" Height="30" VerticalAlignment="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:Name="three_Row1_Box_4_color1" Source="Images/colorPicker/Black_Yelllow.jpg" VerticalAlignment="Bottom" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,12"  Tapped="three_Row1_Box_4_img_Tapped"/>
+
+
+                </Grid>
+                <TextBlock x:Name="textBlock18"  Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Black" FontSize="20" Padding="0,10,0,0" Text="698 IGNITE Metallic Men's Sneakers "  Tapped="three_Row1_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock10}"/>
+
+
+
+
+            </Grid>
+
+
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row2_Box_1_img" Source="Images/album7/Black/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row2_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock19}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid4_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="5,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:Name="three_Row2_Box_1_color1" Source="Images/colorPicker/Black_Silver.jpg" Stretch="Fill" Grid.Column="0" Margin="0,0,10,0" PointerEntered="three_Row2_Box_1_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="three_Row2_Box_1_img_Tapped" HorizontalAlignment="Right" Width="53"/>
+                    <Image x:Name="three_Row2_Box_1_color2" Source="Images/colorPicker/Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row2_Box_1_color2_PointerEntered" Tapped="three_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_1_color3" Source="Images/colorPicker/Red_White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row2_Box_1_color3_PointerEntered" Tapped="three_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_1_color4" Source="Images/colorPicker/Silver_Grash.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="three_Row2_Box_1_color4_PointerEntered" Tapped="three_Row2_Box_4_img_Tapped"/>
+                </Grid>
+                <TextBlock x:Name="textBlock19"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Suede Classic + Men's Sneakers " TextAlignment="Center" Foreground="Black" FontSize="20" Padding="0,10,0,0" Tapped="three_Row2_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock19}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row2_Box_2_img" Source="Images/album7/Green/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row2_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock20}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid5_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:Name="three_Row2_Box_2_color1" Source="Images/colorPicker/Black_Silver.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row2_Box_2_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="three_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_2_color2" Source="Images/colorPicker/Green_Silver.jpg" Stretch="Fill" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row2_Box_2_color2_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="three_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_2_color3" Source="Images/colorPicker/Green-blue.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row2_Box_2_color3_PointerEntered" Tapped="three_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_2_color4" Source="Images/colorPicker/Silver_Grash.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="three_Row2_Box_2_color4_PointerEntered" Tapped="three_Row2_Box_4_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock20" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Suede Classic + Men's Sneakers " TextAlignment="Center" Foreground="Black" FontSize="20" Padding="0,10,0,0" Tapped="three_Row2_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock20}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row2_Box_3_img" Source="Images/album7/Red/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row2_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock21}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid6_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:Name="three_Row2_Box_3_color1" Source="Images/colorPicker/Black_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row2_Box_3_color1_PointerEntered" Tapped="three_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_3_color2" Source="Images/colorPicker/Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row2_Box_3_color2_PointerEntered" Tapped="three_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_3_color3" Source="Images/colorPicker/Red_White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row2_Box_3_color3_PointerEntered" Tapped="three_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_3_color4" Source="Images/colorPicker/Silver_Grash.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="three_Row2_Box_3_color4_PointerEntered" Tapped="three_Row2_Box_4_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock21"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Suede Classic + Men's Sneakers " TextAlignment="Center" Foreground="Black" FontSize="20" Padding="0,10,0,0" Tapped="three_Row2_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock21}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row2_Box_4_img" Source="Images/album7/Silver/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row2_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock22}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid7_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="3" />
+                    <Image x:Name="three_Row2_Box_4_color1" Source="Images/colorPicker/Black_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row2_Box_4_color1_PointerEntered" Tapped="three_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_4_color2" Source="Images/colorPicker/Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row2_Box_4_color2_PointerEntered" Tapped="three_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_4_color3" Source="Images/colorPicker/Red_White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row2_Box_4_color3_PointerEntered" Tapped="three_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_4_color4" Source="Images/colorPicker/Silver_Grash.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="three_Row2_Box_4_color4_PointerEntered" Tapped="three_Row2_Box_4_img_Tapped"/>
+                </Grid>
+                <TextBlock x:Name="textBlock22" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Black" FontSize="20" Padding="0,10,0,0" Text="Suede Classic + Men's Sneakers " Tapped="three_Row2_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock22}"/>
+            </Grid>
+
+
+
+
+        </Grid>
+    </Grid>-->
+    </Grid>
+    </ScrollViewer>
+    </Grid>
+</Page>
+

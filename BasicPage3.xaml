@@ -1,0 +1,703 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="PumaShoes.BasicPage3"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PumaShoes"
+    xmlns:common="using:PumaShoes.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">Women Shoes</x:String>
+    </Page.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="Gray" Width="{Binding ActualWidth, ElementName=pageRoot, Mode=OneWay}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="backButton" Content="&#xE112;" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Background="Gray" BorderBrush="Black" Foreground="Blue" RequestedTheme="Dark" FontFamily="Segoe UI Symbol" Padding="0" BorderThickness="2" Style="{StaticResource NavBtn}" UseLayoutRounding="True" Height="45" Width="45" FontSize="20" FontWeight="Normal" ToolTipService.ToolTip="Back"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"/>
+            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" Margin="10,0,0,0" Foreground="Gold" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="50"/>
+        </Grid>
+        <ScrollViewer Grid.Row="1">
+            <Grid x:Name="Main">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <!---->
+                <Grid x:Name="Running_main" VerticalAlignment="Top" Grid.Row="0">
+                    <Grid Margin="0" VerticalAlignment="Top" Background="Blue">
+                        <TextBlock x:Name="Women_Running_Toggle" VerticalAlignment="Top" Text="&#xE010; Women Running &#xE010;" FontSize="25"  FontFamily="Segoe UI Symbol" Padding="25,0,0,0" Foreground="Black" TextAlignment="Center" Tapped="TextBlock_Tapped" PointerEntered="Women_Running_Toggle_PointerEntered" PointerExited="Women_running_Toggle_PointerExited" Margin="0,7,0,0" />
+                    </Grid>
+                    <Grid x:Name="Running_data" Margin="0,40,0,0" Visibility="Collapsed">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="300"/>
+                            <RowDefinition Height="300"/>
+                            <!--<RowDefinition Height="300"/>-->
+                </Grid.RowDefinitions>
+                <Grid Margin="25,0" Height="300" Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Row1_Box_1_img" Source="Assets/image1/image/puma women shoes/women running/black/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="Row1_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=Row1_Box1_Name}"/>
+                    <Grid Grid.Row="1" PointerExited="Grid_PointerExited" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                        <Image x:Name="Row1_Box_1_color1" Source="Assets/image1/image/puma women shoes/women running/black/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="color1_PointerEntered" Tapped="Row1_Box_1_img_Tapped"/>
+                        <Image x:Name="Row1_Box_1_color2" Source="Assets/image1/image/puma women shoes/women running/black-purple cactus flower/357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="color2_PointerEntered" Tapped="Row1_Box_2_img_Tapped"/>
+                        <Image x:Name="Row1_Box_1_color3" Source="Assets/image1/image/puma women shoes/women running/bleached denim-astral aura-cayenne/188533_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="0,0,10,0" PointerEntered="color3_PointerEntered" HorizontalAlignment="Right" Width="53" Tapped="Row1_Box_3_img_Tapped"/>
+
+                    </Grid>
+                    <TextBlock x:Name="Row1_Box1_Name" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE WOMEN'S RUNNING SHOES " TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="Row1_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=Row1_Box1_Name}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Row1_Box_2_img" Source="Assets/image1/image/puma women shoes/women running/black-purple cactus flower/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="Row1_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock}"/>
+                    <Grid Grid.Row="1" PointerExited="Grid2_PointerExited" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                        <Image x:Name="Row1_Box_2_color1" Source="Assets/image1/image/puma women shoes/women running/black/black-white.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="Row1_Box_2_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="Row1_Box_1_img_Tapped"/>
+                        <Image x:Name="Row1_Box_2_color2" Source="Assets/image1/image/puma women shoes/women running/black-purple cactus flower/357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="Row1_Box_2_color2_PointerEntered" Tapped="Row1_Box_2_img_Tapped"/>
+                        <Image x:Name="Row1_Box_2_color3" Source="Assets/image1/image/puma women shoes/women running/bleached denim-astral aura-cayenne/188533_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="Row1_Box_2_color3_PointerEntered" Tapped="Row1_Box_3_img_Tapped"/>
+
+                    </Grid>
+                    <TextBlock x:Name="textBlock" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE WOMEN'S RUNNING SHOES " TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="Row1_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Row1_Box_3_img" Source="Assets/image1/image/puma women shoes/women running/bleached denim-astral aura-cayenne/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="Row1_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock1}"/>
+                    <Grid Grid.Row="1" PointerExited="Grid3_PointerExited" Background="White" Height="30" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                        <Image x:Name="Row1_Box_3_color1" Source="Assets/image1/image/puma women shoes/women running/black/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="Row1_Box_3_color1_PointerEntered" Tapped="Row1_Box_1_img_Tapped"/>
+                        <Image x:Name="Row1_Box_3_color2" Source="Assets/image1/image/puma women shoes/women running/black-purple cactus flower/357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="Row1_Box_3_color2_PointerEntered" Tapped="Row1_Box_2_img_Tapped"/>
+                        <Image x:Name="Row1_Box_3_color3" Source="Assets/image1/image/puma women shoes/women running/bleached denim-astral aura-cayenne/188533_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="Row1_Box_3_color3_PointerEntered" Tapped="Row1_Box_3_img_Tapped"/>
+
+                    </Grid>
+                    <TextBlock x:Name="textBlock1" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE WOMEN'S RUNNING SHOES " TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="Row1_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock1}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Row1_Box_4_img" Source="Assets/image1/image/puma women shoes/women running/clearwater-blue coral-sulphur spring/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="Row1_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock2}"/>
+                    <Grid Grid.Row="1" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                        <Image x:Name="Row1_Box_4_color1" Source="Assets/image1/image/puma women shoes/women running/clearwater-blue coral-sulphur spring/light_blue_Yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" Tapped="Row1_Box_4_img_Tapped"/>
+
+
+                    </Grid>
+                    <TextBlock x:Name="textBlock2" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE WOMEN'S RUNNING SHOES "  TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="Row1_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock2}" />
+
+                </Grid>
+
+
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Row2_Box_1_img" Source="Assets/image1/image/puma women shoes/women running/fiery coral-black-periscope/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="Row2_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock3}" />
+                    <Grid Grid.Row="1" PointerExited="Grid4_PointerExited" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                        <Image x:Name="Row2_Box_1_color1" Source="Assets/image1/image/puma women shoes/women running/fiery coral-black-periscope/Black-Red-White.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="Row2_Box_1_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="Row2_Box_1_img_Tapped"/>
+                        <Image x:Name="Row2_Box_1_color2" Source="Assets/image1/image/puma women shoes/women running/fiery coral-cayenne-puma silver/188445_02_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="Row2_Box_1_color2_PointerEntered" Tapped="Row2_Box_2_img_Tapped"/>
+                        <Image x:Name="Row2_Box_1_color3" Source="Assets/image1/image/puma women shoes/women running/fluo peach-rose red/pink-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="Row2_Box_1_color3_PointerEntered" Tapped="Row2_Box_3_img_Tapped"/>
+                        <Image x:Name="Row2_Box_1_color4" Source="Assets/image1/image/puma women shoes/women running/fluo peach-white/Pink-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="Row2_Box_1_color4_PointerEntered" Tapped="Row2_Box_4_img_Tapped"/>
+                    </Grid>
+                    <TextBlock x:Name="textBlock3" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE WOMEN'S RUNNING SHOES " TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="Row2_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock3}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Row2_Box_2_img" Source="Assets/image1/image/puma women shoes/women running/fiery coral-cayenne-puma silver/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="Row2_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock4}"/>
+                    <Grid Grid.Row="1" PointerExited="Grid5_PointerExited" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                        <Image x:Name="Row2_Box_2_color1" Source="Assets/image1/image/puma women shoes/women running/fiery coral-black-periscope/Black-Red-White.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="Row2_Box_2_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="Row2_Box_1_img_Tapped" />
+                        <Image x:Name="Row2_Box_2_color2" Source="Assets/image1/image/puma women shoes/women running/fiery coral-cayenne-puma silver/188445_02_SWT_PNA.jpg" Stretch="Fill" Grid.Column="1" Margin="10,0,10,5" PointerEntered="Row2_Box_2_color2_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="Row2_Box_2_img_Tapped"/>
+                        <Image x:Name="Row2_Box_2_color3" Source="Assets/image1/image/puma women shoes/women running/fluo peach-rose red/pink-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="Row2_Box_2_color3_PointerEntered" Tapped="Row2_Box_3_img_Tapped"/>
+                        <Image x:Name="Row2_Box_2_color4" Source="Assets/image1/image/puma women shoes/women running/fluo peach-white/Pink-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="Row2_Box_2_color4_PointerEntered" Tapped="Row2_Box_4_img_Tapped"/>
+
+                    </Grid>
+                    <TextBlock x:Name="textBlock4" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE MULTI WOMEN'S RUNNING SHOES " TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="Row2_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock4}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Row2_Box_3_img" Source="Assets/image1/image/puma women shoes/women running/fluo peach-rose red/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="Row2_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock5}"/>
+                    <Grid Grid.Row="1" PointerExited="Grid6_PointerExited" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                        <Image x:Name="Row2_Box_3_color1" Source="Assets/image1/image/puma women shoes/women running/fiery coral-black-periscope/Black-Red-White.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,12" PointerEntered="Row2_Box_3_color1_PointerEntered" Tapped="Row2_Box_1_img_Tapped" />
+                        <Image x:Name="Row2_Box_3_color2" Source="Assets/image1/image/puma women shoes/women running/fiery coral-cayenne-puma silver/188445_02_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="Row2_Box_3_color2_PointerEntered" Tapped="Row2_Box_2_img_Tapped"/>
+                        <Image x:Name="Row2_Box_3_color3" Source="Assets/image1/image/puma women shoes/women running/fluo peach-rose red/pink-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="Row2_Box_3_color3_PointerEntered" Tapped="Row2_Box_3_img_Tapped"/>
+                        <Image x:Name="Row2_Box_3_color4" Source="Assets/image1/image/puma women shoes/women running/fluo peach-white/Pink-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="Row2_Box_3_color4_PointerEntered" Tapped="Row2_Box_4_img_Tapped"/>
+
+                    </Grid>
+                    <TextBlock x:Name="textBlock5" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE 3D WOMEN'S RUNNING SHOES " TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="Row2_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock5}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Row2_Box_4_img" Source="Assets/image1/image/puma women shoes/women running/fluo peach-white/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="Row2_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock6}"/>
+                    <Grid Grid.Row="1" PointerExited="Grid7_PointerExited" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="3" />
+                        <Image x:Name="Row2_Box_4_color1" Source="Assets/image1/image/puma women shoes/women running/fiery coral-black-periscope/Black-Red-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="Row2_Box_4_color1_PointerEntered" Tapped="Row2_Box_1_img_Tapped"/>
+                        <Image x:Name="Row2_Box_4_color2" Source="Assets/image1/image/puma women shoes/women running/fiery coral-cayenne-puma silver/188445_02_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="Row2_Box_4_color2_PointerEntered" Tapped="Row2_Box_2_img_Tapped"/>
+                        <Image x:Name="Row2_Box_4_color3" Source="Assets/image1/image/puma women shoes/women running/fluo peach-rose red/pink-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="Row2_Box_4_color3_PointerEntered" Tapped="Row2_Box_3_img_Tapped"/>
+                        <Image x:Name="Row2_Box_4_color4" Source="Assets/image1/image/puma women shoes/women running/fluo peach-white/Pink-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="Row2_Box_4_color4_PointerEntered" Tapped="Row2_Box_4_img_Tapped"/>
+
+
+                    </Grid>
+                    <TextBlock x:Name="textBlock6" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text=" SPEED 300 IGNITE WOMEN'S RUNNING SHOES" Tapped="Row2_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock6}"/>
+
+                </Grid>
+
+
+
+
+
+            </Grid>
+    </Grid>
+
+
+    <Grid x:Name="two_soccer_main" VerticalAlignment="Top" Grid.Row="1">
+        <Grid Margin="0" VerticalAlignment="Top" Background="Green">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="371*"/>
+                <ColumnDefinition Width="312*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="Woman_Soccer_Toggle" VerticalAlignment="Bottom" Text="&#xE010; Women Soccer &#xE010;" FontSize="25"  FontFamily="Segoe UI Symbol" Padding="25,0,0,0" Foreground="Black" TextAlignment="Center" Tapped="two_TextBlock_Tapped" PointerEntered="women_Soccer_Toggle_PointerEntered" PointerExited="women_Soccer_Toggle_PointerExited" Grid.ColumnSpan="2" Margin="0,0,0,1" />
+        </Grid>
+        <Grid x:Name="two_soccer_data" Margin="0,40,0,0" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="300"/>
+
+            </Grid.RowDefinitions>
+            <Grid Margin="25,0" Height="300" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="two_Row1_Box_1_img" Source="Assets/image1/image/puma women shoes/women soccer shoes/atomic blue-safety yellow-white/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="two_Row1_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock7}"/>
+                <Grid Grid.Row="1" PointerExited="two_Grid_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:Name="two_Row1_Box_1_color1" Source="Assets/image1/image/puma women shoes/women soccer shoes/atomic blue-safety yellow-white/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="two_color1_PointerEntered" Tapped="two_Row1_Box_1_img_Tapped"/>
+                    <Image x:Name="two_Row1_Box_1_color2" Source="Assets/image1/image/puma women shoes/women soccer shoes/sulphur spring-total eclipse-electric blue lemonade/188445_03_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="two_color2_PointerEntered" Tapped="two_Row1_Box_2_img_Tapped"/>
+                    <Image x:Name="two_Row1_Box_1_color3" Source="Assets/image1/image/puma women shoes/women soccer shoes/sulphur spring-total eclipse-electric blue lemonade1/188445_03_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="two_color3_PointerEntered" Tapped="two_Row1_Box_3_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock7" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="EVOSPEED 4.4 FG WOMEN'S FIRM GROUND" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="two_Row1_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock7}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="two_Row1_Box_2_img" Source="Assets/image1/image/puma women shoes/women soccer shoes/sulphur spring-total eclipse-electric blue lemonade/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="two_Row1_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock8}"/>
+                <Grid Grid.Row="1" PointerExited="two_Grid2_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:Name="two_Row1_Box_2_color1" Source="Assets/image1/image/puma women shoes/women soccer shoes/atomic blue-safety yellow-white/Green_yellow.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="two_Row1_Box_2_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="two_Row1_Box_1_img_Tapped"/>
+                    <Image x:Name="two_Row1_Box_2_color2" Source="Assets/image1/image/puma women shoes/women soccer shoes/sulphur spring-total eclipse-electric blue lemonade/188445_03_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="two_Row1_Box_2_color2_PointerEntered" Tapped="two_Row1_Box_2_img_Tapped"/>
+                    <Image x:Name="two_Row1_Box_2_color3" Source="Assets/image1/image/puma women shoes/women soccer shoes/sulphur spring-total eclipse-electric blue lemonade1/188445_03_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="two_Row1_Box_2_color3_PointerEntered" Tapped="two_Row1_Box_3_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock8" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="EVOSPEED 4.4 FG WOMEN'S FIRM GROUND" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"  Tapped="two_Row1_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock8}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="two_Row1_Box_3_img" Source="Assets/image1/image/puma women shoes/women soccer shoes/sulphur spring-total eclipse-electric blue lemonade1/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="two_Row1_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock9}"/>
+                <Grid Grid.Row="1" PointerExited="two_Grid3_PointerExited" Background="White" Height="30" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:Name="two_Row1_Box_3_color1" Source="Assets/image1/image/puma women shoes/women soccer shoes/atomic blue-safety yellow-white/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="two_Row1_Box_3_color1_PointerEntered" Tapped="two_Row1_Box_1_img_Tapped"/>
+                    <Image x:Name="two_Row1_Box_3_color2" Source="Assets/image1/image/puma women shoes/women soccer shoes/sulphur spring-total eclipse-electric blue lemonade/188445_03_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="two_Row1_Box_3_color2_PointerEntered" Tapped="two_Row1_Box_2_img_Tapped"/>
+                    <Image x:Name="two_Row1_Box_3_color3" Source="Assets/image1/image/puma women shoes/women soccer shoes/sulphur spring-total eclipse-electric blue lemonade1/188445_03_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="two_Row1_Box_3_color3_PointerEntered" Tapped="two_Row1_Box_3_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock9" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="EVOSPEED 4.4 FG WOMEN'S FIRM GROUND SOCCER CLEATS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"  Tapped="two_Row1_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock9}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="two_Row1_Box_4_img" Source="Images/album10/MultiColor/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="two_Row1_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock10}"/>
+                <Grid Grid.Row="1" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:Name="two_Row1_Box_4_color1" Source="Images/colorPicker/Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"  Tapped="two_Row1_Box_4_img_Tapped"/>
+
+
+                </Grid>
+                <TextBlock x:Name="textBlock10" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="76 RUNNER SCRATCHED WOMEN'S RUNNING SHOES"  Tapped="two_Row1_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock10}"/>
+
+
+
+
+            </Grid>
+
+
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="two_Row2_Box_1_img" Source="Images/album11/Black/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="two_Row2_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock11}"/>
+                <Grid Grid.Row="1" PointerExited="two_Grid4_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:Name="two_Row2_Box_1_color1" Source="Images/colorPicker/Black.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="two_Row2_Box_1_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="two_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_1_color2" Source="Images/colorPicker/Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="two_Row2_Box_1_color2_PointerEntered" Tapped="two_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_1_color3" Source="Images/colorPicker/Blue_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="two_Row2_Box_1_color3_PointerEntered" Tapped="two_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_1_color4" Source="Images/colorPicker/Pink_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="two_Row2_Box_1_color4_PointerEntered" Tapped="two_Row2_Box_4_img_Tapped"/>
+                </Grid>
+                <TextBlock x:Name="textBlock11" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="R698 Matte &amp; Shine Women's Sneakers" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="two_Row2_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock11}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="two_Row2_Box_2_img" Source="Images/album11/Silver/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="two_Row2_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock12}"/>
+                <Grid Grid.Row="1" PointerExited="two_Grid5_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:Name="two_Row2_Box_2_color1" Source="Images/colorPicker/Black.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="two_Row2_Box_2_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="two_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_2_color2" Source="Images/colorPicker/Grash_Black.jpg" Stretch="Fill" Grid.Column="1" Margin="10,0,10,5" PointerEntered="two_Row2_Box_2_color2_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="two_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_2_color3" Source="Images/colorPicker/Blue_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="two_Row2_Box_2_color3_PointerEntered" Tapped="two_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_2_color4" Source="Images/colorPicker/Pink_Black.jpg" VerticalAlignment="Bottom" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,12" PointerEntered="two_Row2_Box_2_color4_PointerEntered" Tapped="two_Row2_Box_4_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock12" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="R698 Matte &amp; Shine Women's Sneakers" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="two_Row2_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock12}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="two_Row2_Box_3_img" Source="Images/album11/Blue/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="two_Row2_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock13}"/>
+                <Grid Grid.Row="1" PointerExited="two_Grid6_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:Name="two_Row2_Box_3_color1" Source="Images/colorPicker/Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="two_Row2_Box_3_color1_PointerEntered" Tapped="two_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_3_color2" Source="Images/colorPicker/Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="two_Row2_Box_3_color2_PointerEntered" Tapped="two_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_3_color3" Source="Images/colorPicker/Blue_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="two_Row2_Box_3_color3_PointerEntered" Tapped="two_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_3_color4" Source="Images/colorPicker/Pink_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="two_Row2_Box_3_color4_PointerEntered" Tapped="two_Row2_Box_4_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock13" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="R698 Matte &amp; Shine Women's Sneakers" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="two_Row2_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock13}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="two_Row2_Box_4_img" Source="Images/album11/Pink/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="two_Row2_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock14}"/>
+                <Grid Grid.Row="1" PointerExited="two_Grid7_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="3" />
+                    <Image x:Name="two_Row2_Box_4_color1" Source="Images/colorPicker/Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="two_Row2_Box_4_color1_PointerEntered" Tapped="two_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_4_color2" Source="Images/colorPicker/Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="two_Row2_Box_4_color2_PointerEntered" Tapped="two_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_4_color3" Source="Images/colorPicker/Blue_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="two_Row2_Box_4_color3_PointerEntered" Tapped="two_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="two_Row2_Box_4_color4" Source="Images/colorPicker/Pink_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="two_Row2_Box_4_color4_PointerEntered" Tapped="two_Row2_Box_4_img_Tapped"/>
+                </Grid>
+                <TextBlock x:Name="textBlock14" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="R698 Matte &amp; Shine Women's Sneakers" Tapped="two_Row2_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock14}"/>
+            </Grid>
+
+
+
+
+        </Grid>
+    </Grid>
+
+
+
+    <Grid x:Name="three_soccer_main" VerticalAlignment="Top" Grid.Row="2">
+        <Grid Margin="0" VerticalAlignment="Top" Background="Red">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="318*"/>
+                <ColumnDefinition Width="365*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="women_tennis_Toggle" VerticalAlignment="Top" Text="&#xE011; Women Tennis &#xE011;" FontSize="25"  FontFamily="Segoe UI Symbol" Padding="25,0,0,0" Foreground="Black" TextAlignment="Center" Tapped="three_TextBlock_Tapped" PointerEntered="Men_Soccer_Toggle_PointerEntered" PointerExited="Men_Soccer_Toggle_PointerExited" Grid.ColumnSpan="2" />
+        </Grid>
+        <Grid x:Name="three_soccer_data" Margin="0,40,0,0" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="300"/>
+
+            </Grid.RowDefinitions>
+            <Grid Margin="25,0" Height="300" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row1_Box_1_img" Source="Assets\image1\image\puma women shoes\trinning shoes\black-periscope-white\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row1_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock15}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:Name="three_Row1_Box_1_color1" Source="Assets/image1/image/puma women shoes/trinning shoes/black-periscope-white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_color1_PointerEntered" Tapped="three_Row1_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_1_color2" Source="Assets/image1/image/puma women shoes/trinning shoes/black-white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_color2_PointerEntered" Tapped="three_Row1_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_1_color3" Source="Assets/image1/image/puma women shoes/trinning shoes/fluo peach-rose red-white/red-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_color3_PointerEntered" Tapped="three_Row1_Box_3_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock15"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="PULSE XT CORE WOMEN'S TRAINING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="three_Row1_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock15}"/>
+
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row1_Box_2_img" Source="Assets\image1\image\puma women shoes\trinning shoes\black-white\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row1_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock16}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid2_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:Name="three_Row1_Box_2_color1" Source="Assets/image1/image/puma women shoes/trinning shoes/black-periscope-white/black-white.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row1_Box_2_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="three_Row1_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_2_color2" Source="Assets/image1/image/puma women shoes/trinning shoes/black-white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row1_Box_2_color2_PointerEntered" Tapped="three_Row1_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_2_color3" Source="Assets/image1/image/puma women shoes/trinning shoes/fluo peach-rose red-white/red-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row1_Box_2_color3_PointerEntered" Tapped="three_Row1_Box_3_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock16" Margin="0,20,0,10" Grid.Row="1" TextWrapping="Wrap" Text="PULSE XT CORE WOMEN'S TRAINING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"  Tapped="three_Row1_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock16}" Grid.RowSpan="2"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row1_Box_3_img" Source="Assets\image1\image\puma women shoes\trinning shoes\fluo peach-rose red-white\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row1_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock17}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid3_PointerExited" Background="White" Height="30" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:Name="three_Row1_Box_3_color1" Source="Assets/image1/image/puma women shoes/trinning shoes/black-periscope-white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row1_Box_3_color1_PointerEntered" Tapped="three_Row1_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_3_color2" Source="Assets/image1/image/puma women shoes/trinning shoes/black-white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row1_Box_3_color2_PointerEntered" Tapped="three_Row1_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row1_Box_3_color3" Source="Assets/image1/image/puma women shoes/trinning shoes/fluo peach-rose red-white/red-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row1_Box_3_color3_PointerEntered" Tapped="three_Row1_Box_3_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock17"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="PULSE XT CORE WOMEN'S TRAINING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"  Tapped="three_Row1_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock17}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row1_Box_4_img" Source="Assets\image1\image\puma women shoes\trinning shoes\fluo peach-white\1.jpg" Stretch="Fill" Tapped="three_Row1_Box_4_img_Tapped" Height="200" VerticalAlignment="Top" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock18}"/>
+                <Grid Grid.Row="1" Background="White" Height="30" VerticalAlignment="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:Name="three_Row1_Box_4_color1" Source="Assets\image1\image\puma women shoes\trinning shoes\fluo peach-white\red-white.jpg" VerticalAlignment="Bottom" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,12"  Tapped="three_Row1_Box_4_img_Tapped"/>
+
+
+                </Grid>
+                <TextBlock x:Name="textBlock18"  Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="PULSE XT CORE WOMEN'S TRAINING SHOES"  Tapped="three_Row1_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock10}"/>
+
+
+
+
+            </Grid>
+
+
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row2_Box_1_img" Source="Assets\image1\image\puma women shoes\trinning shoes\white-gray violet\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row2_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock19}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid4_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="5,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:Name="three_Row2_Box_1_color1" Source="Assets\image1\image\puma women shoes\trinning shoes\white-gray violet\Harf_Brown.jpg" Stretch="Fill" Grid.Column="0" Margin="0,0,10,0" PointerEntered="three_Row2_Box_1_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="three_Row2_Box_1_img_Tapped" HorizontalAlignment="Right" Width="53"/>
+                    <Image x:Name="three_Row2_Box_1_color2" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row2_Box_1_color2_PointerEntered" Tapped="three_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_1_color3" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white-zinnia\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row2_Box_1_color3_PointerEntered" Tapped="three_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_1_color4" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-white-zinnia\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="three_Row2_Box_1_color4_PointerEntered" Tapped="three_Row2_Box_4_img_Tapped"/>
+                </Grid>
+                <TextBlock x:Name="textBlock19"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="PULSE XT CORE WOMEN'S TRAINING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="three_Row2_Box_1_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock19}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row2_Box_2_img" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row2_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock20}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid5_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:Name="three_Row2_Box_2_color1" Source="Assets\image1\image\puma women shoes\trinning shoes\white-gray violet\Harf_Brown.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row2_Box_2_color1_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="three_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_2_color2" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white\357640_15_SWT_PNA.jpg" Stretch="Fill" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row2_Box_2_color2_PointerEntered" VerticalAlignment="Top" Height="18" Tapped="three_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_2_color3" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white-zinnia\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row2_Box_2_color3_PointerEntered" Tapped="three_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_2_color4" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-white-zinnia\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="three_Row2_Box_2_color4_PointerEntered" Tapped="three_Row2_Box_4_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock20" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="PULSE XT CORE WOMEN'S TRAINING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="three_Row2_Box_2_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock20}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row2_Box_3_img" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white-zinnia\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row2_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock21}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid6_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:Name="three_Row2_Box_3_color1" Source="Assets\image1\image\puma women shoes\trinning shoes\white-gray violet\Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row2_Box_3_color1_PointerEntered" Tapped="three_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_3_color2" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row2_Box_3_color2_PointerEntered" Tapped="three_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_3_color3" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white-zinnia\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row2_Box_3_color3_PointerEntered" Tapped="three_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_3_color4" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-white-zinnia\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="three_Row2_Box_3_color4_PointerEntered" Tapped="three_Row2_Box_4_img_Tapped"/>
+
+                </Grid>
+                <TextBlock x:Name="textBlock21"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="PULSE XT CORE WOMEN'S TRAINING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Tapped="three_Row2_Box_3_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock21}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="three_Row2_Box_4_img" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-white-zinnia\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200" Tapped="three_Row2_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock22}"/>
+                <Grid Grid.Row="1" PointerExited="three_Grid7_PointerExited" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="3" />
+                    <Image x:Name="three_Row2_Box_4_color1" Source="Assets\image1\image\puma women shoes\trinning shoes\white-gray violet\Harf_Brown.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5" PointerEntered="three_Row2_Box_4_color1_PointerEntered" Tapped="three_Row2_Box_1_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_4_color2" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5" PointerEntered="three_Row2_Box_4_color2_PointerEntered" Tapped="three_Row2_Box_2_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_4_color3" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-periscope-white-zinnia\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5" PointerEntered="three_Row2_Box_4_color3_PointerEntered" Tapped="three_Row2_Box_3_img_Tapped"/>
+                    <Image x:Name="three_Row2_Box_4_color4" Source="Assets\image1\image\puma women shoes\trinning shoes\purple cactus flower-white-zinnia\357640_15_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5" PointerEntered="three_Row2_Box_4_color4_PointerEntered" Tapped="three_Row2_Box_4_img_Tapped"/>
+                </Grid>
+                <TextBlock x:Name="textBlock22" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="PULSE XT CORE WOMEN'S TRAINING SHOES" Tapped="three_Row2_Box_4_img_Tapped" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock22}"/>
+            </Grid>
+
+
+
+
+        </Grid>
+    </Grid>
+    </Grid>
+    </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="b644bd6e-7e0e-40fa-965f-55cc1ef14b3c" Publisher="CN=Student" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>PumaShoes</DisplayName>
+    <PublisherDisplayName>Student</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="PumaShoes.App">
+      <m2:VisualElements DisplayName="PumaShoes" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="PumaShoes" ForegroundText="dark" BackgroundColor="#FFFFFF">
+        <m2:DefaultTile ShortName="Puma Shoes" Square70x70Logo="Assets\Square70x70Logo.png" Square310x310Logo="Assets\Logo.png" Wide310x150Logo="Assets\Logo.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+            <m2:ShowOn Tile="square310x310Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\Logo.png" BackgroundColor="#FFFFFF" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

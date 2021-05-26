@@ -1,0 +1,704 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="PumaShoes.BasicPage1"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PumaShoes"
+    xmlns:common="using:PumaShoes.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="800.836" Width="1368.985">
+
+    <Page.Resources>
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">Men Shoes</x:String>
+    </Page.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="Gray" Width="{Binding ActualWidth, ElementName=pageRoot, Mode=OneWay}">
+
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="323*"/>
+            <RowDefinition Height="368*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="backButton" Content="&#xE112;" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Background="Gray" BorderBrush="Red" Foreground="Blue" RequestedTheme="Dark" FontFamily="Segoe UI Symbol" Padding="0" BorderThickness="2" Style="{StaticResource NavBtn}" UseLayoutRounding="True" Height="45" Width="45" FontSize="20" FontWeight="Normal" ToolTipService.ToolTip="Back"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"/>
+            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" Margin="10,0,0,0" Foreground="Gold" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="50"/>
+        </Grid>
+        <ScrollViewer Grid.Row="1" Grid.RowSpan="2">
+            <Grid x:Name="Main">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <!---->
+                <Grid x:Name="soccer_main" VerticalAlignment="Top" Grid.Row="0">
+                    <Grid Margin="0" VerticalAlignment="Top" Background="Blue">
+                        <TextBlock x:ConnectionId='0' x:Name="Man_Running_Toggle" VerticalAlignment="Top" Text="&#xE010; Men Running &#xE010;" FontSize="25"  FontFamily="Segoe UI Symbol" Padding="25,0,0,0" Foreground="Black" TextAlignment="Center"                                                                                                                               Margin="0,2,0,0" />
+
+                    </Grid>
+                    <Grid x:Name="Running_data" Margin="0,40,0,0" Visibility="Collapsed">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="300"/>
+                            <RowDefinition Height="300"/>
+                            <!--<RowDefinition Height="300"/>-->
+                </Grid.RowDefinitions>
+                <Grid Margin="25,0" Height="300" Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row1_Box_1_img" Source="Assets/image1/image/black/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=Row1_Box1_Name}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                    Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_1_color1" Source="Assets/image1/image/black/Silver_Black_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                      />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_1_color2" Source="Assets/image1/image/black blue/Blue_black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                      />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_1_color3" Source="Assets/image1/image/black white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="0,0,10,0"                                        HorizontalAlignment="Right" Width="53"                               />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="Row1_Box1_Name" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE MEN'S RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=Row1_Box1_Name}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row1_Box_2_img" Source="Assets/image1/image/black blue/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_2_color1" Source="Assets/image1/image/black/Silver_Black_yellow.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                   VerticalAlignment="Top" Height="18"                               />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_2_color2" Source="Assets/image1/image/black blue/Blue_black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_2_color3" Source="Assets/image1/image/black white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE MEN'S RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row1_Box_3_img" Source="Assets/image1/image/black white/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock1}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White" Height="30" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_3_color1" Source="Assets/image1/image/black/Silver_Black_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_3_color2" Source="Assets/image1/image/black blue/Blue_black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_3_color3" Source="Assets/image1/image/black white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock1" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE ULTIMATE MEN'S RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock1}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row1_Box_4_img" Source="Assets/image1/image/blackgray/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock2}"/>
+                    <Grid Grid.Row="1" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                        <Image x:ConnectionId='0' x:Name="Row1_Box_4_color1" Source="Assets/image1/image/blackgray/Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                               />
+
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock2" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE PROKNIT MEN'S RUNNING SHOES"  TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock2}" />
+
+                </Grid>
+
+
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row2_Box_1_img" Source="Assets/image1/image/blue/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock3}" />
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_1_color1" Source="Assets/image1/image/blue/Green_Silver.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                   VerticalAlignment="Top" Height="18"                               />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_1_color2" Source="Assets/image1/image/blue black/Blue_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_1_color3" Source="Assets/image1/image/blue gray orange/188533_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_1_color4" Source="Assets/image1/image/blue green white/357640_11_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                 />
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock3" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE PROKNIT MEN'S RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock3}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row2_Box_2_img" Source="Assets/image1/image/blue black/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock4}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_2_color1" Source="Assets/image1/image/blue/Green_Silver.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                   VerticalAlignment="Top" Height="18"                                />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_2_color2" Source="Assets/image1/image/blue black/Blue_Black.jpg" Stretch="Fill" Grid.Column="1" Margin="10,0,10,5"                                                   VerticalAlignment="Top" Height="18"                               />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_2_color3" Source="Assets/image1/image/blue gray orange/188533_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_2_color4" Source="Assets/image1/image/blue green white/357640_11_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock4" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE PROKNIT MEN'S RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock4}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row2_Box_3_img" Source="Assets/image1/image/blue gray orange/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock5}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_3_color1" Source="Assets/image1/image/blue/Green_Silver.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,12"                                                                                  />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_3_color2" Source="Assets/image1/image/blue black/Blue_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_3_color3" Source="Assets/image1/image/blue gray orange/188533_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_3_color4" Source="Assets/image1/image/blue green white/357640_11_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                 />
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock5" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="IGNITE PROKNIT MEN'S RUNNING SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock5}"/>
+
+                </Grid>
+                <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='0' x:Name="Row2_Box_4_img" Source="Assets/image1/image/blue green white/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock6}"/>
+                    <Grid x:ConnectionId='0' Grid.Row="1"                                     Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="3" />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_4_color1" Source="Assets/image1/image/blue/Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_4_color2" Source="Assets/image1/image/blue black/Blue_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_4_color3" Source="Assets/image1/image/blue gray orange/188533_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                 />
+                        <Image x:ConnectionId='0' x:Name="Row2_Box_4_color4" Source="Assets/image1/image/blue green white/357640_11_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                 />
+
+
+                    </Grid>
+                    <TextBlock x:ConnectionId='0' x:Name="textBlock6" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="IGNITE PROKNIT MEN'S RUNNING SHOES"                                ToolTipService.ToolTip="{Binding Text, ElementName=textBlock6}"/>
+
+                </Grid>
+
+
+
+
+
+            </Grid>
+    </Grid>
+
+
+    <Grid x:Name="two_soccer_main" VerticalAlignment="Top" Grid.Row="1">
+        <Grid Margin="0" VerticalAlignment="Top" Background="Green">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="379*"/>
+                <ColumnDefinition Width="304*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:ConnectionId='0' x:Name="Men_Soccer_Toggle" VerticalAlignment="Top" Text="&#xE010; Men soccer &#xE010;" FontSize="25"  FontFamily="Segoe UI Symbol" Padding="25,0,0,0" Foreground="Black" TextAlignment="Center"                                                                                                                                 Grid.ColumnSpan="2" />
+        </Grid>
+        <Grid x:Name="two_soccer_data" Margin="0,40,0,0" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="300"/>
+
+            </Grid.RowDefinitions>
+            <Grid Margin="25,0" Height="300" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row1_Box_1_img" Source="Assets/image1/image/soccer shoes/black-white-cloisonne/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock7}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                        Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_1_color1" Source="Assets/image1/image/soccer shoes/black-white-cloisonne/187525_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                              />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_1_color2" Source="Assets/image1/image/soccer shoes/black_orange/357640_07_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                              />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_1_color3" Source="Assets/image1/image/soccer shoes/black_white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                              />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock7" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="KING TOP STRIPE FG MEN'S FIRM GROUND SOCCER CLEATS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock7}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row1_Box_2_img" Source="Assets/image1/image/soccer shoes/black_orange/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock8}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_2_color1" Source="Assets/image1/image/soccer shoes/black-white-cloisonne/187525_01_SWT_PNA.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                       VerticalAlignment="Top" Height="18"                                   />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_2_color2" Source="Assets/image1/image/soccer shoes/black_orange/357640_07_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_2_color3" Source="Assets/image1/image/soccer shoes/black_white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock8" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="EVOPOWER 1.3 FG MEN'S FIRM GROUND SOCCER CLEATS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                     ToolTipService.ToolTip="{Binding Text, ElementName=textBlock8}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row1_Box_3_img" Source="Assets/image1/image/soccer shoes/black_white/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock9}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White" Height="30" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_3_color1" Source="Assets/image1/image/soccer shoes/black-white-cloisonne/187525_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_3_color2" Source="Assets/image1/image/soccer shoes/black_orange/357640_07_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_3_color3" Source="Assets/image1/image/soccer shoes/black_white/black-white.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock9" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="EVOSPEED 1.4 FG MEN'S FIRM GROUND SOCCER CLEATS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                     ToolTipService.ToolTip="{Binding Text, ElementName=textBlock9}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row1_Box_4_img" Source="Assets/image1/image/soccer shoes/black_yellow/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock10}"/>
+                <Grid Grid.Row="1" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:ConnectionId='0' x:Name="two_Row1_Box_4_color1" Source="Assets/image1/image/soccer shoes/black_yellow/188445_03_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                    />
+
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock10" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="EVOSPEED 1.4 FG MEN'S FIRM GROUND SOCCER CLEATS"                                     ToolTipService.ToolTip="{Binding Text, ElementName=textBlock10}"/>
+
+
+
+
+            </Grid>
+
+
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_img" Source="Assets/image1/image/soccer shoes/blue/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock11}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_color1" Source="Assets/image1/image/soccer shoes/blue/Blue.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                       VerticalAlignment="Top" Height="18"                                   />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_color2" Source="Assets/image1/image/soccer shoes/blue_black_yellow/blue-black-green.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_color3" Source="Assets/image1/image/soccer shoes/blue_green/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_1_color4" Source="Assets/image1/image/soccer shoes/bluegreen/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                         />
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock11" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="EVOSPEED 1.4 FG MEN'S FIRM GROUND SOCCER CLEATS" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock11}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_img" Source="Assets/image1/image/soccer shoes/blue_black_yellow/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock12}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_color1" Source="Assets/image1/image/soccer shoes/blue/Blue.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                       VerticalAlignment="Top" Height="18"                                   />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_color2" Source="Assets/image1/image/soccer shoes/blue_black_yellow/blue-black-green.jpg" Stretch="Fill" Grid.Column="1" Margin="10,0,10,5"                                                       VerticalAlignment="Top" Height="18"                                   />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_color3" Source="Assets/image1/image/soccer shoes/blue_green/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_2_color4" Source="Assets/image1/image/soccer shoes/bluegreen/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                         />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock12" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="EVOSPEED SALA 3.4 MEN'S INDOOR SOCCER SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock12}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_img" Source="Assets/image1/image/soccer shoes/blue_green/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock13}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_color1" Source="Assets/image1/image/soccer shoes/blue/Blue.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_color2" Source="Assets/image1/image/soccer shoes/blue_black_yellow/blue-black-green.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_color3" Source="Assets/image1/image/soccer shoes/blue_green/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_3_color4" Source="Assets/image1/image/soccer shoes/bluegreen/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                         />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock13" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="EVOSPEED SALA 3.4 MEN'S INDOOR SOCCER SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock13}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_img" Source="Assets/image1/image/soccer shoes/bluegreen/1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock14}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                         Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="3" />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_color1" Source="Assets/image1/image/soccer shoes/blue/Blue.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_color2" Source="Assets/image1/image/soccer shoes/blue_black_yellow/blue-black-green.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_color3" Source="Assets/image1/image/soccer shoes/blue_green/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                         />
+                    <Image x:ConnectionId='0' x:Name="two_Row2_Box_4_color4" Source="Assets/image1/image/soccer shoes/bluegreen/Green_yellow.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                         />
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock14" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="MOMENTTA VULC SALA 2 MEN'S INDOOR SOCCER SHOES"                                    ToolTipService.ToolTip="{Binding Text, ElementName=textBlock14}"/>
+            </Grid>
+
+
+
+
+        </Grid>
+    </Grid>
+
+
+
+    <Grid x:Name="three_tennis_main" VerticalAlignment="Top" Grid.Row="2">
+        <Grid Margin="0" VerticalAlignment="Top" Background="Red">
+            <TextBlock x:ConnectionId='0' x:Name="Men_Tennis_Toggle" VerticalAlignment="Top" Text="&#xE011; Men Tennis &#xE011;" FontSize="25"  FontFamily="Segoe UI Symbol" Padding="25,0,0,0" Foreground="Black" TextAlignment="Center"                                                                                                                                   Grid.ColumnSpan="2" />
+        </Grid>
+        <Grid x:Name="three_soccer_data" Margin="0,40,0,0" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="300"/>
+
+            </Grid.RowDefinitions>
+            <Grid Margin="25,0" Height="300" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="three_Row1_Box_1_img" Source="Assets\image1\image\tennis shoes\atomic blue-white\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock15}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                          Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_1_color1" Source="Assets\image1\image\tennis shoes\atomic blue-white\Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                  />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_1_color2" Source="Assets\image1\image\tennis shoes\black-asphalt\Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                  />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_1_color3" Source="Assets\image1\image\tennis shoes\black-periscope\Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                  />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock15"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="VOLTAGE MEN'S SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock15}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="three_Row1_Box_2_img" Source="Assets\image1\image\tennis shoes\black-asphalt\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock16}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                           Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_2_color1" Source="Assets\image1\image\tennis shoes\atomic blue-white\Green_Silver.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                         VerticalAlignment="Top" Height="18"                                     />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_2_color2" Source="Assets\image1\image\tennis shoes\black-asphalt\Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_2_color3" Source="Assets\image1\image\tennis shoes\black-periscope\Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                             />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock16" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="VOLTAGE MEN'S SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                       ToolTipService.ToolTip="{Binding Text, ElementName=textBlock16}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="three_Row1_Box_3_img" Source="Assets\image1\image\tennis shoes\black-periscope\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock17}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                           Background="White" Height="30" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_3_color1" Source="Assets\image1\image\tennis shoes\atomic blue-white\Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_3_color2" Source="Assets\image1\image\tennis shoes\black-asphalt\Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_3_color3" Source="Assets\image1\image\tennis shoes\black-asphalt\Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                             />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock17"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="VOLTAGE MEN'S SHOES" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                       ToolTipService.ToolTip="{Binding Text, ElementName=textBlock17}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="three_Row1_Box_4_img" Source="Assets\image1\image\tennis shoes\black-red blast\1.jpg" Stretch="Fill"                                      Height="200" VerticalAlignment="Top" ToolTipService.ToolTip="{Binding Text, ElementName=textBlock18}"/>
+                <Grid Grid.Row="1" Background="White" Height="30" VerticalAlignment="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:ConnectionId='0' x:Name="three_Row1_Box_4_color1" Source="Assets\image1\image\tennis shoes\black-red blast\357640_07_SWT_PNA.jpg" VerticalAlignment="Bottom" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,12"                                      />
+
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock18"  Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="VOLTAGE MEN'S SHOES "                                       ToolTipService.ToolTip="{Binding Text, ElementName=textBlock18}"/>
+
+
+
+
+            </Grid>
+
+
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="three_Row2_Box_1_img" Source="Assets\image1\image\tennis shoes\black-white-asphalt\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock19}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                           Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="5,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_1_color1" Source="Assets\image1\image\tennis shoes\black-white-asphalt\Grash_Black.jpg" Stretch="Fill" Grid.Column="0" Margin="0,0,10,0"                                                         VerticalAlignment="Top" Height="18"                                      HorizontalAlignment="Right" Width="53"/>
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_1_color2" Source="Assets\image1\image\tennis shoes\blue wing teal-blue heaven\Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_1_color3" Source="Assets\image1\image\tennis shoes\blue wing teal-white-orange pop\188533_01_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_1_color4" Source="Assets\image1\image\tennis shoes\limestone gray-black\360037_02_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                             />
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock19"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Cell Kilter Nubuck Men's Training Shoes " TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock19}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="1" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="three_Row2_Box_2_img" Source="Assets\image1\image\tennis shoes\blue wing teal-blue heaven\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock20}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                           Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="1" />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_2_color1" Source="Assets\image1\image\tennis shoes\black-white-asphalt\Grash_Black.jpg" Stretch="Fill" Grid.Column="0" Margin="10,0,10,5"                                                         VerticalAlignment="Top" Height="18"                                     />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_2_color2" Source="Assets\image1\image\tennis shoes\blue wing teal-blue heaven\Green_Silver.jpg" Stretch="Fill" Grid.Column="1" Margin="10,0,10,5"                                                         VerticalAlignment="Top" Height="18"                                     />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_2_color3" Source="Images/colorPicker/Green-blue.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_2_color4" Source="Assets\image1\image\tennis shoes\limestone gray-black\360037_02_SWT_PNA.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                             />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock20" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Pulse XT v2 Graphic Men's Training " TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock20}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="2" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="three_Row2_Box_3_img" Source="Assets\image1\image\tennis shoes\blue wing teal-white-orange pop\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock21}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                           Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="2" />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_3_color1" Source="Assets\image1\image\tennis shoes\black-white-asphalt\Grash_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_3_color2" Source="Assets\image1\image\tennis shoes\blue wing teal-blue heaven\Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_3_color3" Source="Images/colorPicker/Red_White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_3_color4" Source="Assets\image1\image\tennis shoes\limestone gray-black\360037_02_SWT_PNA.jpg" Stretch="Fill" Grid.Column="3" Margin="10,0,10,12"                                                                                             />
+
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock21"  Margin="0" Grid.Row="2" TextWrapping="Wrap" Text=" Pulse XT Men's Training Shoes" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock21}"/>
+
+            </Grid>
+            <Grid Margin="25,0" Height="300" Background="White" Grid.Column="3" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:ConnectionId='0' x:Name="three_Row2_Box_4_img" Source="Assets\image1\image\tennis shoes\limestone gray-black\1.jpg" VerticalAlignment="Top" Stretch="Fill" Height="200"                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock22}"/>
+                <Grid x:ConnectionId='0' Grid.Row="1"                                           Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Red" Height="3" Margin="10,0,10,9" Stroke="Black" VerticalAlignment="Bottom" StrokeThickness="0" Grid.Column="3" />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_4_color1" Source="Assets\image1\image\black blue\Blue_Black.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="0" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_4_color2" Source="Assets\image1\image\black white\Black-White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="1" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_4_color3" Source="Images/colorPicker/Red_White.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="2" Margin="10,0,10,5"                                                                                             />
+                    <Image x:ConnectionId='0' x:Name="three_Row2_Box_4_color4" Source="Assets\image1\image\blue\Green_Silver.jpg" VerticalAlignment="Top" Stretch="Fill" Height="18" Grid.Column="3" Margin="10,0,10,5"                                                                                             />
+                </Grid>
+                <TextBlock x:ConnectionId='0' x:Name="textBlock22" Margin="0" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red" FontSize="20" Padding="0,10,0,0" Text="Cell Surin 2 Men's Training Shoes "                                      ToolTipService.ToolTip="{Binding Text, ElementName=textBlock22}"/>
+            </Grid>
+
+
+
+
+        </Grid>
+    </Grid>
+    </Grid>
+    </ScrollViewer>
+    </Grid>
+</Page>
+

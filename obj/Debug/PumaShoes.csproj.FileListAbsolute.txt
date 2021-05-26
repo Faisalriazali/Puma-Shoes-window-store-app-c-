@@ -1,0 +1,551 @@
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\App.g.i.cs
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\App.g.cs
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.cs
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MainPage.g.i.cs
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MainPage.g.cs
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\App.xaml
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\App.xbf
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xaml
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MainPage.xaml
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xbf
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MainPage.xbf
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\App.xbf
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\BlankPage1.xbf
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\MainPage.xbf
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\PumaShoes.exe
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\PumaShoes.pdb
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\resources.pri
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\AppxManifest.xml
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\PumaShoes.exe
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\PumaShoes.pdb
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\priconfig.xml
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\priconfig.xml.intermediate
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\layout.resfiles
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\layout.resfiles.intermediate
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\resources.resfiles
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\resources.resfiles.intermediate
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\pri.resfiles
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\pri.resfiles.intermediate
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\ProjectArchitectures.txt
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\BlankPage2.xbf
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.i.cs
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.cs
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xaml
+c:\users\student.lab8-5.000\documents\visual studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\App.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage1.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage2.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\MainPage.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.xr.xml
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.exe
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.pdb
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\resources.pri
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\AppxManifest.xml
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.i.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.i.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.i.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xaml
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xaml
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xaml
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xaml
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.exe
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.pdb
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml.intermediate
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles.intermediate
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles.intermediate
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles.intermediate
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\ProjectArchitectures.txt
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage3.xbf
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.i.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.cs
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xaml
+C:\Users\Student\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\App.g.i.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\App.g.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.i.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.i.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\MainPage.g.i.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\MainPage.g.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\App.xaml
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xaml
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xaml
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xaml
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\MainPage.xaml
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\App.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\MainPage.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\PumaShoes.exe
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\App.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\BlankPage1.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\BlankPage2.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\BlankPage3.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\MainPage.xbf
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\PumaShoes.xr.xml
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\PumaShoes.exe
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\PumaShoes.pdb
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\resources.pri
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\AppxManifest.xml
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\PumaShoes.pdb
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\priconfig.xml
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\priconfig.xml.intermediate
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\layout.resfiles
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\layout.resfiles.intermediate
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\resources.resfiles
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\resources.resfiles.intermediate
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\pri.resfiles
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\pri.resfiles.intermediate
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Uzair\Downloads\PumaShoes\PumaShoes\obj\Debug\ProjectArchitectures.txt
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\App.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\BlankPage1.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\BlankPage2.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\BlankPage3.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\MainPage.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\PumaShoes.xr.xml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\PumaShoes.exe
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\PumaShoes.pdb
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\resources.pri
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\AppxManifest.xml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\App.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\App.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MainPage.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MainPage.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\App.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MainPage.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\App.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MainPage.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\PumaShoes.exe
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\PumaShoes.pdb
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\priconfig.xml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\priconfig.xml.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\layout.resfiles
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\layout.resfiles.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\resources.resfiles
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\resources.resfiles.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\pri.resfiles
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\pri.resfiles.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\obj\Debug\ProjectArchitectures.txt
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\App.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage1.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\MainPage.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.exe
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.pdb
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\resources.pri
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\AppxManifest.xml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.exe
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.pdb
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\ProjectArchitectures.txt
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage1.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage2.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\App.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage1.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage2.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage1.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage2.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage3.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\MainPage.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.xr.xml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.exe
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.pdb
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\resources.pri
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\AppxManifest.xml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.i.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xaml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xbf
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.exe
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.pdb
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Uzair\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\ProjectArchitectures.txt
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\App.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage1.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage2.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage1.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage2.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage3.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\MainPage.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.xr.xml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.exe
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.pdb
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\resources.pri
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\AppxManifest.xml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.i.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.i.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.i.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.i.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.g.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.i.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.g.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.i.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xaml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xaml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xaml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xaml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xaml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xaml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xaml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage2.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage3.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xbf
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.exe
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.pdb
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml.intermediate
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles.intermediate
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles.intermediate
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles.intermediate
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Aptech\PumaShoes\PumaShoes\PumaShoes\obj\Debug\ProjectArchitectures.txt
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.xr.xml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage3.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage4.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\App.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage1.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage2.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage3.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage4.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage1.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\MainPage.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.exe
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.pdb
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\resources.pri
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\AppxManifest.xml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.exe
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.pdb
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\ProjectArchitectures.txt
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\Kid.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\bin\Debug\Kid.xbf
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.g.i.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.g.cs
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.xaml
+C:\Users\Umer\Documents\Visual Studio 2013\Projects\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.exe
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\PumaShoes.pdb
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.i.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.i.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.i.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.g.i.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.g.i.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.g.i.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.i.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xaml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xaml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xaml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.xaml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xaml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.xaml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xaml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\App.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage1.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage2.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage4.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BlankPage1.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\Kid.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MainPage.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\App.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage1.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage2.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage3.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage4.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BasicPage6.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\BlankPage1.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\Kid.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\MainPage.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.exe
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.pdb
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\resources.pri
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\AppxManifest.xml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage6.g.i.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage6.g.cs
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage6.xaml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage6.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.xaml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\BasicPage3.xbf
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\priconfig.xml.intermediate
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\layout.resfiles.intermediate
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\resources.resfiles.intermediate
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\pri.resfiles.intermediate
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Umer\Documents\PumaShoes\PumaShoes\PumaShoes\obj\Debug\ProjectArchitectures.txt
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\App.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\BasicPage1.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\BasicPage2.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\BasicPage3.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\BasicPage4.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\BasicPage6.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\BlankPage1.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\Kid.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\MainPage.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\PumaShoes.exe
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\PumaShoes.pdb
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\resources.pri
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\AppxManifest.xml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\bin\Debug\PumaShoes.build.appxrecipe
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\App.g.i.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\App.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage1.g.i.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage1.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage2.g.i.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage2.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage3.g.i.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage3.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage4.g.i.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage4.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage6.g.i.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage6.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BlankPage1.g.i.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BlankPage1.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\Kid.g.i.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\Kid.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\MainPage.g.i.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\MainPage.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\App.xaml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage1.xaml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage2.xaml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage3.xaml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage4.xaml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage6.xaml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\Kid.xaml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\App.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage1.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage2.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage3.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage4.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BasicPage6.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\Kid.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\XamlSaveStateFile.xml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BlankPage1.xaml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\MainPage.xaml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\BlankPage1.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\MainPage.xbf
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\PumaShoes.exe
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\PumaShoes.pdb
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\priconfig.xml
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\priconfig.xml.intermediate
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\layout.resfiles
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\layout.resfiles.intermediate
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\resources.resfiles
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\resources.resfiles.intermediate
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\pri.resfiles
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\pri.resfiles.intermediate
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\qualifiers.txt
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\qualifiers.txt.intermediate
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\DANISH 03048356938\Desktop\PumaShoes\obj\Debug\ProjectArchitectures.txt
